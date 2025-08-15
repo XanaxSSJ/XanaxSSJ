@@ -22,7 +22,7 @@ function animateTitle() {
     setTimeout(animateTitle, 350);
 }
 
-fetch('https://api.countapi.xyz/hit/xanaxssj.github.io/XanaxSSJ/')
+fetch('https://api.countapi.xyz/hit/xanaxssj.github.io/XanaxSSJ')
     .then(res => res.json())
     .then(data => {
         document.getElementById('visitas').textContent = data.value;
