@@ -12,64 +12,82 @@
 
 <div class="background"></div>
 
-<div class="container">
-    <div class="bio-card">
+<audio id="background-music" loop>
+    <source src="assets/pinifarina.mp3" type="audio/mpeg">
+</audio>
 
-        <div class="portada">
-            <img src="assets/portada.jpg" alt="Portada" class="img-portada">
-            <div class="contador">👁 <span id="visitas">0</span></div>
-        </div>
+<div class="landing-page" id="landing-page">
+    <div class="who-am-i-text" onclick="showBio()">
+        <span>Who am I?</span>
+        <div class="text-glow"></div>
+    </div>
 
-        <div class="bio-content">
-
-            <div class="avatar-container">
-                <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
-            </div>
-
-            <h1 class="nickname">XanaxSSJ</h1>
-
-            <div class="redes">
-
-                <a href="https://steamcommunity.com/id/xanaxssj" target="_blank">
-                    <img src="assets/steam.svg" alt="Icono personalizado" class="icono-red">
-                </a>
-
-                <a href="https://www.faceit.com/es/players/XanaxSSJ-" target="_blank">
-                    <img src="assets/faceit.svg" alt="Icono personalizado" class="icono-red">
-                </a>
-
-                <a href="#" target="_blank">
-                    <img src="assets/gamersclub.svg" alt="Icono personalizado" class="icono-red">
-                </a>
-
-                <a href="#" target="_blank">
-                    <img src="assets/instagram.svg" alt="Icono personalizado" class="icono-red">
-                </a>
-            </div>
-
-            <p class="biografia">
-                <i class="fa-solid fa-circle"></i> My ambition destroys your talent.<br>
-                <i class="fa-solid fa-circle"></i> I'm not cheating, you're just bad.
-            </p>
-
-            <div class="roles">
-                <div class="rol">
-                    <i class="fa-solid fa-crosshairs"></i> Awper
-                </div>
-                <div class="rol">
-                    <i class="fa-solid fa-gun"></i> Fragger
-                </div>
-            </div>
-
-            <div class="country">
-                <i class="fa-solid fa-location-dot"></i> Chile
-            </div>
-
-        </div>
-
+    <div class="music-controls">
+        <button id="music-toggle" onclick="toggleMusic()">
+            <i class="fa-solid fa-volume-high" id="music-icon"></i>
+        </button>
     </div>
 </div>
 
+<div class="bio-container" id="bio-container" style="display: none;">
+    <div class="container">
+        <div class="bio-card">
+
+            <div class="portada">
+                <img src="assets/portada.jpg" alt="Portada" class="img-portada">
+                <div class="contador">👁 <span id="visitas">0</span></div>
+            </div>
+
+            <div class="bio-content">
+
+                <div class="avatar-container">
+                    <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <h1 class="nickname">XanaxSSJ</h1>
+
+                <div class="redes">
+
+                    <a href="https://steamcommunity.com/id/xanaxssj" target="_blank">
+                        <img src="assets/steam.svg" alt="Icono personalizado" class="icono-red">
+                    </a>
+
+                    <a href="https://www.faceit.com/es/players/XanaxSSJ-" target="_blank">
+                        <img src="assets/faceit.svg" alt="Icono personalizado" class="icono-red">
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <img src="assets/gamersclub.svg" alt="Icono personalizado" class="icono-red">
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <img src="assets/instagram.svg" alt="Icono personalizado" class="icono-red">
+                    </a>
+                </div>
+
+                <p class="biografia">
+                    <i class="fa-solid fa-circle"></i> My ambition destroys your talent.<br>
+                    <i class="fa-solid fa-circle"></i> I'm not cheating, you're just bad.
+                </p>
+
+                <div class="roles">
+                    <div class="rol">
+                        <i class="fa-solid fa-crosshairs"></i> Awper
+                    </div>
+                    <div class="rol">
+                        <i class="fa-solid fa-gun"></i> Fragger
+                    </div>
+                </div>
+
+                <div class="country">
+                    <i class="fa-solid fa-location-dot"></i> Chile
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

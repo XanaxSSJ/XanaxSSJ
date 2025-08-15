@@ -1,3 +1,50 @@
+let musicPlaying = false;
+const music = document.getElementById('background-music');
+const musicToggle = document.getElementById('music-toggle');
+const musicIcon = document.getElementById('music-icon');
+const landingPage = document.getElementById('landing-page');
+const bioContainer = document.getElementById('bio-container');
+
+function showBio() {
+    landingPage.style.opacity = '0';
+    landingPage.style.transform = 'scale(0.8)';
+
+    setTimeout(() => {
+        landingPage.style.display = 'none';
+        bioContainer.style.display = 'block';
+
+        // Mostrar la bio con fade in
+        setTimeout(() => {
+            bioContainer.style.opacity = '1';
+            bioContainer.style.transform = 'scale(1)';
+        }, 50);
+    }, 300);
+}
+
+function toggleMusic() {
+    if (musicPlaying) {
+        music.pause();
+        musicIcon.className = 'fa-solid fa-volume-mute';
+        musicPlaying = false;
+    } else {
+        music.play();
+        musicIcon.className = 'fa-solid fa-volume-high';
+        musicPlaying = true;
+    }
+}
+
+document.addEventListener('click', function() {
+    if (!musicPlaying) {
+        music.play().then(() => {
+            musicPlaying = true;
+            musicIcon.className = 'fa-solid fa-volume-high';
+        }).catch(() => {
+            // Si falla la reproducción automática, mostrar icono de mute
+            musicIcon.className = 'fa-solid fa-volume-mute';
+        });
+    }
+}, { once: true });
+
 let text = "XanaxSSJ";
 let index = 0;
 let direction = 1;
@@ -22,8 +69,4 @@ function animateTitle() {
     setTimeout(animateTitle, 350);
 }
 
-fetch('https://api.countapi.xyz/hit/xanaxssj.github.io/XanaxSSJ')
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById('visitas').textContent = data.value;
-    });
+animateTitle();

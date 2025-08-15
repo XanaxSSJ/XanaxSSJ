@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
 * {
     margin: 0;
 }
@@ -166,4 +168,364 @@ body {
 .steam-icon svg {
     fill: white;
     transition: 0.3s;
+}
+
+/* Tablets (768px y menos) */
+@media (max-width: 768px) {
+    .bio-card {
+        width: 90%;
+        max-width: 350px;
+        margin: 20px;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .avatar-container {
+        top: 60px;
+    }
+    
+    .nickname {
+        margin-top: 60px;
+        font-size: 1.6em;
+    }
+    
+    .img-portada {
+        height: 120px;
+    }
+    
+    .redes a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1em;
+    }
+    
+    .icono-red {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .roles {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .rol {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* Móviles pequeños (480px y menos) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .bio-card {
+        width: 95%;
+        max-width: 320px;
+        margin: 10px;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-width: 2px;
+    }
+    
+    .avatar-container {
+        top: 50px;
+    }
+    
+    .nickname {
+        margin-top: 50px;
+        font-size: 1.4em;
+    }
+    
+    .img-portada {
+        height: 100px;
+    }
+    
+    .bio-content {
+        padding: 15px;
+    }
+    
+    .redes {
+        margin: 12px 0;
+    }
+    
+    .redes a {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+        margin: 0 3px;
+    }
+    
+    .icono-red {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .biografia {
+        padding: 12px 0;
+        font-size: 0.9em;
+    }
+    
+    .country {
+        font-size: 1em;
+        padding: 4px 12px;
+    }
+    
+    .rol {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+    
+    .contador {
+        font-size: 12px;
+        padding: 4px 8px;
+        top: 8px;
+        right: 12px;
+    }
+}
+
+/* Móviles muy pequeños (360px y menos) */
+@media (max-width: 360px) {
+    .bio-card {
+        width: 98%;
+        max-width: 280px;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .avatar-container {
+        top: 40px;
+    }
+    
+    .nickname {
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+    
+    .img-portada {
+        height: 80px;
+    }
+    
+    .bio-content {
+        padding: 12px;
+    }
+    
+    .redes a {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9em;
+        margin: 0 2px;
+    }
+    
+    .icono-red {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .biografia {
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+    
+    .country {
+        font-size: 0.9em;
+        padding: 3px 10px;
+    }
+    
+    .rol {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+}
+
+/* Orientación horizontal en móviles */
+@media (max-width: 768px) and (orientation: landscape) {
+    .bio-card {
+        width: 80%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .portada {
+        width: 40%;
+        position: relative;
+    }
+    
+    .bio-content {
+        width: 60%;
+        padding: 20px;
+    }
+    
+    .avatar-container {
+        position: static;
+        transform: none;
+        margin-bottom: 15px;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .nickname {
+        margin-top: 0;
+    }
+    
+    .img-portada {
+        height: 100%;
+        min-height: 200px;
+    }
+    
+    .roles {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    
+    .rol {
+        width: auto;
+    }
+}
+
+/* Estilos para la página de inicio */
+.landing-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.who-am-i-text {
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400;
+    position: relative;
+    color: #ff0000;
+    font-size: 2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.who-am-i-text:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 50px #ff0000;
+}
+
+.who-am-i-text:active {
+    transform: scale(0.95);
+}
+
+.text-glow {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.who-am-i-text:hover .text-glow {
+    left: 100%;
+}
+
+.music-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+}
+
+.music-controls button {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #ff0000;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.music-controls button:hover {
+    background: #ff0000;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff0000;
+}
+
+/* Contenedor de la bio */
+.bio-container {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+
+.bio-container.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Responsive para la página de inicio */
+@media (max-width: 768px) {
+    .who-am-i-text {
+        font-size: 3em;
+        letter-spacing: 2px;
+    }
+    
+    .music-controls button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .who-am-i-text {
+        font-size: 2.5em;
+        letter-spacing: 1px;
+    }
+    
+    .music-controls {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .music-controls button {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 360px) {
+    .who-am-i-text {
+        font-size: 2em;
+    }
 }
