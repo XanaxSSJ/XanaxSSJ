@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+}
+
+.background {
+    background: url('https://i.pinimg.com/originals/24/bf/9e/24bf9ea5632d759d4793dabbc51e89c6.gif') no-repeat center/cover;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(6px);
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-card {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff0000;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.portada {
+    position: relative;
+}
+
+.img-portada {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+.contador {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: 1px solid #ff0000;
+}
+
+.bio-content {
+    padding: 20px;
+}
+
+.avatar-container {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fd0000;
+}
+
+.country {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    background: #111;
+    border: 1px solid red;
+    border-radius: 20px;
+    font-size: 1.1em;
+    box-shadow: 0 0 10px red;
+
+}
+
+.country i {
+    color: red;
+    margin-right: 6px;
+}
+
+.nickname {
+    margin-top: 75px;
+    font-size: 1.8em;
+    color: #ff0000;
+}
+
+.redes {
+    margin: 15px 0;
+}
+
+.redes a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid red;
+    border-radius: 50%;
+    box-shadow: 0 0 10px red;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.3s;
+    margin: 0 4px;
+}
+
+.redes a:hover {
+    background: red;
+    color: black;
+}
+
+.biografia {
+    padding: 15px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.roles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.rol {
+    padding: 8px 15px;
+    border: 2px solid red;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1em;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px red;
+}
+
+.rol i {
+    margin-right: 8px;
+    color: red;
+}
+
+.biografia i {
+    color: red;
+    margin-right: 8px;
+    font-size: 0.6em;
+}
+.icono-red {
+    width: 24px;
+    height: 24px;
+}
+
+.steam-icon svg {
+    fill: white;
+    transition: 0.3s;
+}
