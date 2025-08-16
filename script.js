@@ -2,8 +2,16 @@ let musicPlaying = false;
 const music = document.getElementById('background-music');
 const musicToggle = document.getElementById('music-toggle');
 const musicIcon = document.getElementById('music-icon');
+const volumeSlider = document.getElementById('volume-slider');
 const landingPage = document.getElementById('landing-page');
 const bioContainer = document.getElementById('bio-container');
+
+music.volume = 0.1;
+
+function changeVolume() {
+    const volume = volumeSlider.value / 100;
+    music.volume = volume;
+}
 
 function showBio() {
     landingPage.style.opacity = '0';
