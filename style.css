@@ -173,8 +173,8 @@ body {
 /* Tablets (768px y menos) */
 @media (max-width: 768px) {
     .bio-card {
-        width: 90%;
-        max-width: 350px;
+        width: 95%;
+        max-width: 380px;
         margin: 20px;
     }
     
@@ -226,8 +226,8 @@ body {
     }
     
     .bio-card {
-        width: 95%;
-        max-width: 320px;
+        width: 98%;
+        max-width: 350px;
         margin: 10px;
     }
     
@@ -296,8 +296,8 @@ body {
 /* Móviles muy pequeños (360px y menos) */
 @media (max-width: 360px) {
     .bio-card {
-        width: 98%;
-        max-width: 280px;
+        width: 99%;
+        max-width: 320px;
     }
     
     .avatar {

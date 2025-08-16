@@ -39,7 +39,6 @@ document.addEventListener('click', function() {
             musicPlaying = true;
             musicIcon.className = 'fa-solid fa-volume-high';
         }).catch(() => {
-            // Si falla la reproducción automática, mostrar icono de mute
             musicIcon.className = 'fa-solid fa-volume-mute';
         });
     }
@@ -60,7 +59,7 @@ function animateTitle() {
         }
     } else {
         index--;
-        if (index < 0) {
+        if (index < 1) { 
             direction = 1;
             index = 0;
         }
