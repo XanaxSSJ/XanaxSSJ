@@ -1,16 +1,54 @@
-## Hi there 👋
+# 👋 ¡Hola! Soy Desarrollador Backend Java
 
-<!--
-**XanaxSSJ/XanaxSSJ** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Desarrollador Backend apasionado por **Java** y el ecosistema **Spring**.  
+🎯 Me enfoco en crear APIs robustas, escalables y bien estructuradas.  
+🎂 Tengo **23 años** y sigo aprendiendo constantemente nuevas tecnologías.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Tecnologías y Herramientas
+
+- ☕ **Java**
+- 🌱 **Spring Framework**
+  - Spring Boot
+  - Spring Data JPA
+  - Spring Security
+- 🗄️ **Bases de datos**
+  - MySQL
+  - PostgreSQL
+- 🔧 **Herramientas**
+  - Maven / Gradle
+  - Git & GitHub
+  - Postman
+- 🐳 Docker (básico/intermedio)
+
+---
+
+## 🧠 ¿Qué me gusta hacer?
+
+- Diseñar y desarrollar **APIs REST**
+- Aplicar **buenas prácticas** y principios SOLID
+- Aprender sobre **arquitectura backend** y **microservicios**
+- Mejorar el rendimiento y la seguridad de aplicaciones
+
+---
+
+## 📂 Proyectos
+
+Aquí encontrarás proyectos enfocados en:
+- Backend con Java y Spring
+- CRUDs completos
+- Autenticación y autorización
+- Integración con bases de datos
+
+> 🔎 Revisa mis repositorios para ver mi código y evolución.
+
+---
+
+## 📫 Contacto
+
+- LinkedIn: 
+
+---
+
+⭐ ¡Gracias por visitar mi perfil!
